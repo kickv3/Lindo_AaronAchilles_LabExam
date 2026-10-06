@@ -1,0 +1,156 @@
+body {
+    background-image: url('../images/background.png');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.login-box {
+    background-color: rgba(66, 66, 66, 0.40);
+    height: 600px;
+    width: 500px;
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    margin: 50px auto;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.welcome-text {
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: bold;
+    color: #AFAFB7;
+}
+
+.pfp {
+    width: 120px;
+    height: 120px;
+}
+
+.text {
+    position: relative;
+    font-family: Arial;
+    font-size: 30px;
+    color: #AFAFB7;
+}
+
+.text-username {
+    text-align: left;
+    top: -20px;
+    left: 40px;
+}
+
+.text-password {
+    text-align: left;
+    top: -40px;
+    left: 40px;
+}
+
+.input input{
+    padding: 10px;
+    left: 10px;
+    width: 80%;
+    height: 20px;
+    background-color: #AFAFB7;
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+}
+
+.input-username{
+    position: relative;
+    top: -40px;
+}
+
+.input-password{
+    position: relative;
+    top: -60px;
+}
+
+.remember-me {
+    position: relative;
+    text-align: left;
+    top: -40px;
+    left: 40px;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 20px;
+    color: #AFAFB7;
+}
+
+.forgot-password {
+    position: relative;
+    top: -63px;
+    left: 120px;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 20px;
+    color: #AFAFB7;
+}
+
+.login-button {
+    position: relative;
+    font-weight: bold;
+    font-family: Arial;
+    top: -40px;
+    width: 420px;
+    font-size: 30px;
+    color: #424242;
+    border-radius: 12px;
+}
+
+.no-account {
+    position: relative;
+    font-weight: bold;
+    font-family: Arial;
+    top: -20px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.login-using {
+    font-family: Arial;
+    position: relative;
+    color: #FFFFFF;
+    font-size: 30px;
+    top: -250px;
+    left: 170px;
+}
+
+.line {
+    position: relative;
+    left: -545px;
+    top: -260px;
+    width: 400px;
+}
+
+.logo-facebook {
+    position: relative;
+    left: 40px;
+    top: -270px;
+
+}
+
+.logo-google {
+    position: relative;
+    left: 60px;
+    top: -280px;
+}
+
+.logo-instagram {
+    position: relative;
+    left: 80px;
+    top: -275px;
+}
+
+.logo-twitter {
+    position: relative;
+    left: 100px;
+    top: -265px;
+}

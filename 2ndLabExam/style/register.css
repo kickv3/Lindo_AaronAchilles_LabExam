@@ -1,0 +1,216 @@
+.toast {
+    position: fixed;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+
+.toast-success { background-color: rgba(20, 120, 65, 0.95); }
+.toast-error   { background-color: rgba(190, 40, 60, 0.95); }
+.toast.hide    { opacity: 0; }
+
+.register-box {
+    box-sizing: border-box;
+    width: 680px;
+    max-width: 92%;
+    margin: 40px auto;
+    padding: 20px 35px 25px;
+    background-color: rgba(66, 66, 66, 0.40);
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+    font-family: Arial;
+}
+
+.register-title {
+    margin: 0 0 15px;
+    text-align: center;
+    font-size: 40px;
+    color: #AFAFB7;
+}
+
+.register-body {
+    display: flex;
+    gap: 30px;
+}
+
+.avatar-column {
+    width: 140px;
+    flex-shrink: 0;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.avatar-label {
+    display: block;
+    cursor: pointer;
+    font-size: 14px;
+    color: #AFAFB7;
+}
+
+.reg-pfp {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 8px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.fields-column {
+    flex: 1;
+    min-width: 0;
+}
+
+.reg-label {
+    display: block;
+    margin: 8px 0 4px;
+    font-size: 24px;
+    color: #AFAFB7;
+}
+
+.reg-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 42px;
+    padding: 10px 12px;
+    font-size: 16px;
+    background-color: #AFAFB7;
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    background-size: 20px;
+}
+
+.reg-input:focus {
+    outline: 2px solid #FFFFFF;
+    outline-offset: 2px;
+}
+
+.reg-input.has-error {
+    border: 2px solid #FF6B81;
+}
+
+.icon-user {
+    padding-left: 42px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23424242' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='8' r='4'/%3E%3Cpath d='M4 21c0-4 3.6-6 8-6s8 2 8 6'/%3E%3C/svg%3E");
+}
+
+.icon-lock {
+    padding-left: 42px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23424242' stroke-width='2' stroke-linecap='round'%3E%3Crect x='5' y='11' width='14' height='10' rx='2'/%3E%3Cpath d='M8 11V7a4 4 0 0 1 8 0v4'/%3E%3C/svg%3E");
+}
+
+.field-error,
+.field-hint {
+    margin: 4px 0 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.field-error { color: #FF8A9B; }
+.field-hint  { color: #AFAFB7; }
+.field-hint.ok  { color: #7DFFB3; }
+.field-hint.bad { color: #FF8A9B; }
+.avatar-column .field-error { margin-top: 8px; }
+
+.register-button {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 22px;
+    padding: 10px;
+    font-family: Arial;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #424242;
+    background-color: #E0E0E0;
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.register-button:hover { background-color: #FFFFFF; }
+
+.switch-page {
+    margin: 15px 0 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.switch-page a:hover { text-decoration: underline; }
+
+.social-box {
+    position: fixed;
+    left: 40px;
+    bottom: 30px;
+    width: 300px;
+    text-align: center;
+    font-family: Arial;
+}
+
+.social-title {
+    margin: 0;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.social-box hr { margin: 10px 0 15px; }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.home-box {
+    width: 420px;
+    text-align: center;
+}
+
+.home-name {
+    margin: 10px 0 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.home-username {
+    margin: 4px 0 0;
+    font-size: 18px;
+    color: #AFAFB7;
+}
+
+@media (max-width: 1000px) {
+    .social-box {
+        position: static;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .register-body { flex-direction: column; align-items: center; }
+    .fields-column { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .toast { transition: none; }
+}
